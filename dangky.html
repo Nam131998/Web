@@ -13,6 +13,8 @@ Mo ta cong viec : <input Type="Text" style="width:200px;height:300px;"/> <br>
 <button type="button" onclick="openW()">Dang Ky</button>
     <script type="text/javascript">
     function openW() {
+        var hoVaTen = document.getElementById('HoTen.txt').value
+        localStorage.setItem("storageName",hoVaTen );
         window.open('file:///C:/Users/16520/OneDrive/Desktop/open.html', 'open', 'width=1000,height=600');
         return false;
     }
